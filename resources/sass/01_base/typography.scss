@@ -1,0 +1,64 @@
+$primary-text: #000;
+$secondary-text: #5c5c5c;
+
+body {
+    font-family: $font-family;
+}
+
+#index__title {
+    color: $primary;
+}
+
+h1 {
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    padding: 0 1rem;
+    display: inline-block;
+    color: $text-light;
+    background-color: $primary;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: auto;
+    letter-spacing: -4%;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: auto;
+    letter-spacing: -2%;
+    margin-bottom: .5rem;
+}
+
+.subheading {
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 2%;
+    font-style: italic;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: medium;
+    line-height: auto;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 1rem;
+}
+
+.mobile-menu {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0.2px;
+}

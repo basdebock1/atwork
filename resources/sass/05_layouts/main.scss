@@ -1,0 +1,15 @@
+
+main {
+    margin: auto 5%;
+    padding-top: 64px;
+}
+
+section {
+    margin: 6rem 0;
+}
+
+@media (min-width: $break-lg) {
+    main {
+        margin: auto 10%;
+    }
+}

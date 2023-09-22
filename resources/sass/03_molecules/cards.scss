@@ -1,0 +1,65 @@
+.card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+    background-color: $bg-dark;
+    color: $text-dark;
+
+    .card__text {
+        padding-bottom: 2rem;
+    }
+}
+
+.card-alt {
+    background-color: #fff;
+    border-radius: 1rem;
+    color: $text-light;
+    padding: 1rem;
+    @media (min-width: $break-lg) {
+        padding: 3rem;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.leiding__card {
+    img {
+        width: 100%;
+        height: 12rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+    .leider__totem {
+      color: $primary;
+    }
+}
+
+.intro__card {
+    background-color: #fff;
+    border-radius: 1rem;
+    color: $text-light;
+    padding: 1rem;
+    @media (min-width: $break-lg) {
+        padding: 3rem;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.intro__info {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+    background-color: $bg-dark;
+    color: $text-dark;
+    .info__content {
+        display: grid;
+        gap: 2rem;
+    }
+}

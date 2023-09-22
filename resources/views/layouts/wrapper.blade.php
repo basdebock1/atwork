@@ -19,8 +19,6 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-    @vite('resources/js/slick.js')
-    @vite('resources/js/link.js')
 
 </head>
 

@@ -1,4 +1,6 @@
 import './bootstrap';
+import './link';
+import './slick';
 
 import Alpine from 'alpinejs';
 

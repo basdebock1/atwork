@@ -2,12 +2,14 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\InstagramController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\LeiderController;
 use App\Http\Controllers\TakController;
 use App\Models\Article;
 use Illuminate\Support\Facades\Route;
 use PharIo\Manifest\AuthorElement;
+use Illuminate\Support\Facades\Http;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +22,12 @@ use PharIo\Manifest\AuthorElement;
 |
 */
 
+Route::get('/insta', [InstagramController::class, 'index']);
+
 Route::get('/', function () {
     return view('index', [
-        'articles' => Article::orderByDesc('created_at')->take(3)->get()
+        'articles' => Article::orderByDesc('created_at')->take(3)->get(),
+        'instagramPosts' => [InstagramController::class, 'index'],
     ]);
 });
 

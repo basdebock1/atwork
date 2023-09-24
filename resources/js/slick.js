@@ -13,8 +13,9 @@ $(".nieuws__slider").slick({
         {
             breakpoint: 768,
             settings: {
-                centerMode: false,
+                centerMode: true,
                 slidesToShow: 2,
+                centerPadding: "16px",
             },
         },
         {

@@ -200,3 +200,18 @@
     }
   }
 }
+
+.footer {
+  text-align: center;
+  margin: 3rem 0;
+  .socials {
+    display: flex;
+    justify-content: center;
+    i {
+      padding: 0 1rem;
+    }
+  }
+  p {
+    margin-top: 2rem;
+  }
+}

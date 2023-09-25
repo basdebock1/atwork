@@ -1,17 +1,7 @@
 @extends('layouts.wrapper')
 @section('content')
     <section class="introduction">
-        <div class="introduction__top" style="background-image: url('/images/paint brush.png')">
-            <a target="_blank" href="https://instagram.com/scouts.sintmartinus">
-                <div class="video__account">
-                    <img class="account__thumb" src="images\favicon.ico" alt="">
-                    <p class="post__title">Scouts Sint-Martinus</p>
-                </div>
-            </a>
-            <video autoplay muted loop>
-                <source src="\videos\aftermovie startdag 2023.mp4">
-            </video>
-        </div>
+        <x-intro-top :intropost="$intropost" />
         <div class="intro__info">
             <h2 id="index__title" class="intro__title">Welkom bij Scouts Sint-Martinus!</h2>
             <div class="info__content">

@@ -30,7 +30,7 @@
     <div class="">
         <x-navigation-admin />
         <!-- Page Content -->
-        <main>
+        <main style="margin: 0 1rem">
             {{ $slot }}
         </main>
     </div>

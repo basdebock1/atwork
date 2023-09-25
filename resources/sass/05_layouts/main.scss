@@ -3,7 +3,7 @@ main {
     padding-top: 64px;
 }
 
-section {
+section:not(:last-child) {
     margin-bottom: 6rem;
     padding: 1rem;
 }

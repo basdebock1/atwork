@@ -2,6 +2,9 @@
 .tak__wrapper {
     display: grid;
     gap: 6rem;
+    @media (min-width: $break-md) {
+        gap: 12rem;
+    }
 }
 
 .content {
@@ -13,13 +16,25 @@
         object-fit: cover;
         box-shadow: .5rem .5rem 0 $primary;
     }
+    .maps {
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+        box-shadow: .5rem .5rem 0 $primary;
+    }
     @media (min-width: $break-md) {
         grid-template-columns: repeat(2, 1fr);
+        gap: 6rem;
         .content__image {
             height: 100%;
         }
     }
 }
+
+#formIframe {
+    width: 100%;
+    height: 80vh;
+  }
 
 .content__rev {
     display: grid;
@@ -35,6 +50,7 @@
     }
     @media (min-width: $break-md) {
         grid-template-columns: repeat(2, 1fr);
+        gap: 6rem;
         .content__image {
             height: 100%;
         }

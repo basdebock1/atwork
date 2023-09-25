@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('intro_posts', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('tilte');
+            $table->string('description');
             $table->string('file_path');
         });
     }

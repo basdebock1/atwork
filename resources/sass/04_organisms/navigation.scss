@@ -1,217 +1,263 @@
 // BURGER BUTTON
 
 .burger {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  transition: all 0.5s ease;
-  border-radius: 5px;
-  margin: 0;
-  border: none;
-  background: none;
-  &:hover {
-    box-shadow: none;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    margin: 0;
+    border: none;
+    background: none;
+    &:hover {
+        box-shadow: none;
+    }
 }
 
 .burger.active {
-  border-radius: 5px;
+    border-radius: 5px;
 }
 
 .burger-strip {
-  transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .burger .strip div:nth-child(1) {
-  width: 32px;
+    width: 32px;
 }
 .burger .strip div:nth-child(2) {
-  width: 28px;
+    width: 28px;
 }
 .burger .strip div:nth-child(3) {
-  width: 24px;
+    width: 24px;
 }
 
 .strip div {
-  height: 3px;
-  border-radius: 2px;
-  background: white;
-  margin: 6px;
-  transition: all 0.55s cubic-bezier(0.075, 0.82, 0.165, 1);
-  width: 35px;
-  margin-left: auto;
-  margin-right: 0;
+    height: 3px;
+    border-radius: 2px;
+    background: white;
+    margin: 6px;
+    transition: all 0.55s cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 35px;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .burger.active .strip div {
-  background: $text-dark;
+    background: $text-dark;
 }
 
 .burger.active .strip div:first-child {
-  transform: translateY(9px) rotate(45deg);
-  width: 32px;
+    transform: translateY(9px) rotate(45deg);
+    width: 32px;
 }
 
 .burger.active .strip div:nth-child(2) {
-  opacity: 0;
+    opacity: 0;
 }
 
 .burger.active .strip div:last-child {
-  transform: translateY(-9px) rotate(-45deg);
-  width: 32px;
+    transform: translateY(-9px) rotate(-45deg);
+    width: 32px;
 }
 
 .nav {
-  width: 100%;
-  position: fixed;
-  z-index: 50;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
 }
 
 .nav.active {
-  transition: all ease 200ms;
-  .nav__items {
-    visibility: visible;
-    opacity: 1;
-  }
+    transition: all ease 200ms;
+    .nav__items {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 .nav__bar {
-  width: 100%;
-  height: 64px;
-  position: fixed;
-  z-index: 6;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: $bg-dark;
-  padding: 1rem;
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $bg-dark;
+    padding: 1rem;
 }
 
 .nav__brand {
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0;
-  color: $text-dark;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: $text-dark;
 }
 
 .nav__items {
-  visibility: hidden;
-  opacity: 0;
-  height: calc(100vh - 64px);
-  width: 100%;
-  position: absolute;
-  top: 64px;
-  margin-top: 0;
-  background-color: $bg-dark;
-  z-index: 5;
-  transition: all ease 200ms;
-  left: 0;
+    visibility: hidden;
+    opacity: 0;
+    height: calc(100vh - 64px);
+    width: 100%;
+    position: absolute;
+    top: 64px;
+    margin-top: 0;
+    background-color: $bg-dark;
+    z-index: 5;
+    transition: all ease 200ms;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav__links {
-  text-align: center;
-  padding-top: 2rem;
+    text-align: center;
+    padding-top: 2rem;
 
-  li {
-    list-style: none;
-    padding: 1rem 1.5rem;
+    li {
+        list-style: none;
+        padding: 1.5rem 1.5rem;
 
-    a {
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: 500;
-      color: $text-dark;
+        a {
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 500;
+            color: $text-dark;
+        }
     }
-  }
+}
+
+.social__links {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    li {
+        list-style: none;
+        padding: 1rem 1.5rem;
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+            color: $text-dark;
+        }
+    }
 }
 
 .nav__buttons {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 
-  .login {
-    width: fit-content;
-    height: fit-content;
-    min-height: fit-content;
-    padding: 2px 20px;
-    margin: 0;
-  }
+    .login {
+        width: fit-content;
+        height: fit-content;
+        min-height: fit-content;
+        padding: 2px 20px;
+        margin: 0;
+    }
 }
 
 @media (min-width: $break-lg) {
-  .burger {
-    display: none;
-  }
-
-  .nav__bar {
-    padding: 0 10%;
-    justify-content: space-between;
-  }
-
-  .nav__items {
-    visibility: visible;
-    opacity: 1;
-    position: relative;
-    height: 48px;
-    top: 0;
-    margin-top: 0;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    .nav__links {
-        padding-top: 0;
-        width: fit-content;
-      li {
-        list-style: none;
-        padding: 0;
-        padding-left: 2rem;
-        width: fit-content;
-        display: inline-block;
-        a {
-          text-decoration: none;
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 24px;
-          &:hover {
-            border-bottom: 1px solid $primary;
-          }
-        }
-        .active {
-          color: $primary;
-        }
-      }
+    .burger {
+        display: none;
     }
-  }
 
-  .active {
-    color: $primary;
-  }
-
-  .nav__buttons {
-    display: none;
-    .login {
-      padding: 6px 20px;
-      display: none;
+    .nav__bar {
+        padding: 0 10%;
+        justify-content: space-between;
     }
-  }
+
+    .nav__items {
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        height: 48px;
+        width: fit-content;
+        top: 0;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        .nav__links {
+            padding-top: 0;
+            width: fit-content;
+            li {
+                list-style: none;
+                padding: 0;
+                padding-left: 2rem;
+                width: fit-content;
+                display: inline-block;
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+                .active {
+                    color: $primary;
+                }
+            }
+        }
+    }
+    .social__links {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: 10rem;
+        position: absolute;
+        justify-content: space-between;
+        top: -1rem;
+        right: -8.5vw;
+        background-color: transparent;
+        li {
+            padding: 0;
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 24px;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .active {
+        color: $primary;
+    }
+
+    .nav__buttons {
+        display: none;
+        .login {
+            padding: 6px 20px;
+            display: none;
+        }
+    }
 }
 
 .footer {
-  text-align: center;
-  margin: 3rem 0;
-  .socials {
-    display: flex;
-    justify-content: center;
-    i {
-      padding: 0 1rem;
+    text-align: center;
+    margin: 3rem 0;
+    .socials {
+        display: flex;
+        justify-content: center;
+        i {
+            padding: 0 1rem;
+        }
     }
-  }
-  p {
-    margin-top: 2rem;
-  }
+    p {
+        margin-top: 2rem;
+    }
 }

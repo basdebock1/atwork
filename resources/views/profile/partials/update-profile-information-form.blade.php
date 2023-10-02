@@ -1,19 +1,21 @@
 <section class="mb-32">
-    <header>
-        <h3>
-            {{ __('Profiel informatie') }}
-        </h3>
-
-        <p class="mt-1">
-            {{ __("Pas je profielnaam en emailadres aan.") }}
-        </p>
-    </header>
 
     <form id="send-verification" method="post" action="{{ route('verification.send') }}">
         @csrf
     </form>
 
-    <form method="post" action="{{ route('profile.update') }}">
+    <form class="admin-form" method="post" action="{{ route('profile.update') }}">
+        
+        <header>
+            <h3>
+                {{ __('Profiel informatie') }}
+            </h3>
+    
+            <p class="mt-1">
+                {{ __("Pas je profielnaam en emailadres aan.") }}
+            </p>
+        </header>
+        
         @csrf
         @method('patch')
 
@@ -48,7 +50,7 @@
         </div>
 
         <div class="flex items-center gap-4">
-            <button>{{ __('Opslaan') }}</button>
+            <button class="btn blue">{{ __('Opslaan') }}</button>
 
             @if (session('status') === 'profile-updated')
                 <p

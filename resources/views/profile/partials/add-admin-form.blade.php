@@ -1,15 +1,14 @@
 <section class="mb-32">
-    <header>
-        <h3>
-            {{ __('Voeg een nieuwe admin toe') }}
-        </h3>
 
-        <p>
-            Deze nieuwe gebruiker kan alle dynamische content op je website aanpassen. Voeg dus niet zomaar een hoop nieuwe admins toe!
-        </p>
-    </header>
-    <form method="POST" action="{{ route('profile.store') }}">
+    <form class="admin-form" method="POST" action="{{ route('profile.store') }}">
         @csrf
+
+        <header>
+            <h3>{{ __('Voeg een nieuwe admin toe') }}</h3>
+            <p>
+                Deze nieuwe gebruiker kan alle dynamische content op je website aanpassen. Voeg dus niet zomaar een hoop nieuwe admins toe!
+            </p>
+        </header>
 
         <!-- Name -->
         <div>
@@ -48,7 +47,7 @@
         </div>
 
         <div class="flex items-center mt-4">
-            <button>
+            <button class="btn green">
                 {{ __('Voeg nieuwe admin toe') }}
             </button>
         </div>

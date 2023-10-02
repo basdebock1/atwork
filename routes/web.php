@@ -6,8 +6,10 @@ use App\Http\Controllers\InstagramController;
 use App\Http\Controllers\IntroPostController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\LeiderController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\TakController;
 use App\Models\Article;
+use App\Models\Post;
 use App\Models\IntroPost;
 use Illuminate\Support\Facades\Route;
 use PharIo\Manifest\AuthorElement;
@@ -27,7 +29,7 @@ use Illuminate\Support\Facades\Http;
 Route::get('/', function () {
     return view('index', [
         'articles' => Article::orderByDesc('created_at')->take(3)->get(),
-        'intropost' => IntroPost::where('id', '1')->first(),
+        'post' => Post::Latest('created_at')->first(),
     ]);
 });
 
@@ -64,13 +66,18 @@ Route::delete('leiding/{id}', [LeiderController::class, 'delete'])->middleware([
 Route::get('admin/nieuws', [AdminController::class, 'nieuws'])->middleware(['auth', 'verified']);
 Route::get('admin/leiding', [AdminController::class, 'leiding'])->middleware(['auth', 'verified']);
 
+Route::get('/post/create', function() {
+    return view('post.create');
+})->middleware(['auth', 'verified']);
+
 Route::get('/admin', function () {
     return view('admin.index', [
-        'intropost' => IntroPost::where('id', '1')->first()
+        'post' => Post::Latest('created_at')->first(),
     ]);
 })->middleware(['auth', 'verified']);
 
 // Route::get('introposts/create', [IntroPostController::class, 'create'])->middleware(['auth', 'verified']);
+Route::post('/post', [PostController::class, 'store']);
 Route::put('/admin/{id}', [IntroPostController::class, 'update'])->middleware(['auth', 'verified']);
 
 Route::middleware('auth')->group(function () {

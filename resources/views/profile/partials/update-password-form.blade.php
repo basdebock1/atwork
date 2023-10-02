@@ -1,15 +1,17 @@
 <section class="mb-32">
-    <header>
-        <h3>
-            {{ __('Verander je wachtwoord') }}
-        </h3>
 
-        <p>
-            {{ __('Onthoud je wachtwoord goed!') }}
-        </p>
-    </header>
-
-    <form method="post" action="{{ route('password.update') }}">
+    <form class="admin-form" method="post" action="{{ route('password.update') }}">
+        
+        <header>
+            <h3>
+                {{ __('Verander je wachtwoord') }}
+            </h3>
+    
+            <p>
+                {{ __('Onthoud je wachtwoord goed!') }}
+            </p>
+        </header>
+        
         @csrf
         @method('put')
 
@@ -32,7 +34,7 @@
         </div>
 
         <div class="flex items-center gap-4">
-            <button>{{ __('Opslaan') }}</button>
+            <button class="btn blue">{{ __('Opslaan') }}</button>
 
             @if (session('status') === 'password-updated')
                 <p

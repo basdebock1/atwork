@@ -1,7 +1,7 @@
 @extends('layouts.wrapper')
 @section('content')
     <section class="introduction">
-        <x-intro-top :intropost="$intropost" />
+        <x-post :post="$post" />
         <div class="intro__info">
             <h2 id="index__title" class="intro__title">Welkom bij Scouts Sint-Martinus!</h2>
             <div class="info__content">
@@ -12,14 +12,14 @@
                         Schrijf
                         je dan in via de link hieronder.
                     </p>
-                    <a class="link" href="/inschrijven">Inschrijven</a>
+                    <a class="btn" href="/inschrijven">Inschrijven</a>
                 </div>
                 <div class="info__text">
                     <h3>Ik heb een vraagje...?</h3>
                     <p>
                         Twijfel niet en stuur ons een mailtje! De groepsleiding neemt dan snel contact op met jou.
                     </p>
-                    <a class="link" href="mailto:groepsleiding@scoutsnieuwkerken.be">Contacteer ons!</a>
+                    <a class="btn" href="mailto:groepsleiding@scoutsnieuwkerken.be">Contacteer ons!</a>
                 </div>
             </div>
         </div>

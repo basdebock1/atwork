@@ -1,7 +1,6 @@
 @extends('layouts.wrapper')
-
 @section('content')
-    <div>
+    <section>
         <a class="link-back" href="/nieuws">Back to news</a>
         <h2 class="article__title__detail">{{ $article->title }}</h2>
         <div class="article__detail">
@@ -22,5 +21,5 @@
                 @endif
             </div>
         </div>
-    </div>
+    </section>
 @endsection

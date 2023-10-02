@@ -2,32 +2,21 @@
 @section('content')
     <section class="intro">
         <h1 class="intro__title">Takken</h1>
-        <div class="intro__content">
-            <div class="intro__card">
-                <h2>Een tak? Was da?!</h2>
-                <div class="card__content">
-                    <p>
-                        Een tak? Dat groeit toch aan een boom? Hoewel dit op het eerste zicht niks met scouting te maken
-                        heeft,
-                        zit
-                        er een
-                        mooie symboliek in deze benaming. </p>
-                    <p>
-                        Een tak is simpelweg een 'leeftijdsgroep' waarin je bij onze scouts terecht komt. Van kleine kapoen
-                        tot
-                        ervaren
-                        leider, er staat je een spannend avontuur te wachten!
-                    </p>
-                </div>
-            </div>
+        <div class="content__rev">
+            <img class="content__image" src="images/intros/sjorring-tent-op-hoogte.jpg" alt="">
             <div class="intro__info">
+                <h2 id="index__title">Een tak? Was da?!</h2>
                 <div class="info__content">
                     <div class="info__text">
-                        <h3>Wie is mijn leiding?</h3>
+                        <h3>Leeftijdsgroepen</h3>
                         <p>
-                            Wil je weten onder wie zijn vleugels je belandt? Neem dan een kijkje op onze leidingspagina.
+                            Een tak? Dat groeit toch aan een boom? Hoewel dit op het eerste zicht niks met scouting te maken
+                            heeft, zit er een mooie symboliek in deze benaming.
                         </p>
-                        <a class="link" href="/leiding">Leiding</a>
+                        <p>
+                            Een tak is simpelweg een 'leeftijdsgroep' waarin je bij onze scouts terecht komt. Van kleine
+                            kapoen tot ervaren leider, er staat je een spannend avontuur te wachten!
+                        </p>
                     </div>
                     <div class="info__text">
                         <h3>Meer over takwerking</h3>

@@ -8,6 +8,11 @@ section {
     padding: 1rem;
 }
 
+#shadow-host-companion {
+    margin: 0;
+    padding: 0;
+}
+
 @media (min-width: $break-lg) {
     main {
         margin: auto 10%;

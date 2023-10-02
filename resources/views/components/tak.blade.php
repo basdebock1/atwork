@@ -12,7 +12,7 @@
             echo nl2br($tak->text);
         @endphp
         </p>
-        <a href="mailto:{{ $tak->email }}" class="link-secondary">Stuur ons een berichtje!</a>
+        <a href="mailto:{{ $tak->email }}" class="btn">Stuur ons een berichtje!</a>
     </div>
 
     <img class="content__image" src="images/takken/{{ $tak->image_path }}" alt="{{ $tak->tak }}">

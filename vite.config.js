@@ -12,7 +12,4 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    resolve: {
-        alias: [{ find: "@", replacement: resolve(__dirname, "./src") }],
-    },
 });

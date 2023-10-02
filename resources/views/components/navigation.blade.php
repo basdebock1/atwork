@@ -26,13 +26,13 @@
             </ul>
             <ul class="social__links">
                 <li>
-                    <a href=""><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://www.facebook.com/scoutsmartinus"><i class="fab fa-facebook fa-lg"></i></a>
                 </li>
                 <li>
-                    <a href=""><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.instagram.com/scouts.sintmartinus"><i class="fab fa-instagram fa-lg"></i></a>
                 </li>
                 <li>
-                    <a href=""><i class="fa fa-gift fa-lg"></i></a>
+                    <a href="https://www.trooper.be/nl/trooperverenigingen/scoutsnieuwkerkenwaas"><i class="fa fa-gift fa-lg"></i></a>
                 </li>
             </ul>
         </div>

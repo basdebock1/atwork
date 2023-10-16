@@ -13,6 +13,6 @@ class Article extends Model
     public function getDate()
     {
         Carbon::setLocale('nl');
-        return Carbon::parse($this->start)->isoFormat('DD MMMM YYYY');
+        return Carbon::parse($this->created_at)->isoFormat('DD MMMM YYYY');
     }
 }

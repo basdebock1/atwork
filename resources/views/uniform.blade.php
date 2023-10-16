@@ -3,7 +3,7 @@
     <section class="intro">
         <h1 class="intro__title">Uniform</h1>
         <div class="content__rev">
-            <img class="content__image" src="images/intros/fluiter_mei.jpg" alt="">
+            <img class="content__image" src="images/intros/uniform.jpg" alt="">
             <div class="intro__info">
                 <div class="info__content">
                     <div class="info__text">

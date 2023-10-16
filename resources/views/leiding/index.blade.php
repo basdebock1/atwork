@@ -3,7 +3,7 @@
     <section class="intro">
         <h1 class="intro__title">Leiding</h1>
         <div class="content__rev">
-            <img class="content__image" src="images/intros/fluiter_juni.jpg" alt="">
+            <img class="content__image" src="images/intros/leiding.jpg" alt="">
             <div class="intro__info">
                 <div class="info__content">
                     <div class="info__text">
@@ -24,7 +24,7 @@
                             snel mogelijk contact op met jou! Vragen gericht naar een bepaalde tak stuur je best naar het
                             e-mail adres van deze tak.
                         </p>
-                        <a class="link" href="mailto:groepsleiding@scoutsnieuwkerken.be">E-mail
+                        <a class="btn" href="mailto:groepsleiding@scoutsnieuwkerken.be">E-mail
                             groepsleiding</a>
                     </div>
                 </div>

@@ -44,7 +44,7 @@
                     naar
                     hartenlust kan shoppen!</p>
                 <p>Met jouw steun kunnen wij nieuw spelmateriaal, tenten, sjorgerief, enz... kopen. Bedankt!! 👊</p>
-                <a class="link" href="https://www.trooper.be/nl/trooperverenigingen/scoutsnieuwkerkenwaas">Onze Trooper
+                <a class="btn" href="https://www.trooper.be/nl/trooperverenigingen/scoutsnieuwkerkenwaas">Onze Trooper
                     Pagina</a>
             </div>
             <div class="trooper__image" style="background-image: url('/images/paint brush.png')">

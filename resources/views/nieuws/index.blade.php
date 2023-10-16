@@ -9,8 +9,7 @@
                     <div class="info__text">
                         <h3>De Fluiter</h3>
                         <p>
-                            Alle info over normale vergaderingen vind je in ons maandelijks boekje 'De Fluiter'. Je vind dit
-                            boekje tussen alle nieuwsartikels.
+                            Alle info over normale vergaderingen vind je in ons maandelijks boekje 'De Fluiter'. Per tak kan je hierin terugvinden welke activiteiten je te wachten staan.
                         </p>
                     </div>
                     <div class="info__text">
@@ -19,18 +18,20 @@
                             Volg ons zeker op sociale media. Daar verschijnen leuke posts, maar er komen ook informatieve
                             berichten op onze pagina's. Like dus zeker onze Facebook-pagina en volg ons op Instagram.
                         </p>
-                        <a class="link-secondary" target="_blank"
-                            href="https://www.instagram.com/scouts.sintmartinus/"><i class="fab fa-instagram"></i>
-                            Instagram</a>
-                        <a class="link-secondary" target="_blank" href="https://www.facebook.com/scoutsmartinus"><i
-                                class="fab fa-facebook"></i> Facebook</a>
+                        <div style="display: flex; gap:1rem;">
+                            <a class="btn" target="_blank" href="https://www.instagram.com/scouts.sintmartinus/"><i
+                                    class="fab fa-instagram"></i>
+                                Instagram</a>
+                            <a class="btn" target="_blank" href="https://www.facebook.com/scoutsmartinus"><i
+                                    class="fab fa-facebook"></i> Facebook</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="article">
-                @if ($latestArticle)
-                    <h2>Laatste nieuwtje</h2>
-                    <x-article :article="$latestArticle" />
+                @if ($latestFluiter)
+                    <h2>Fluiter van de maand</h2>
+                    <x-article :article="$latestFluiter" />
                 @else
                     <h2>Geen berichten gevonden</h2>
                 @endif

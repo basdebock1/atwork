@@ -3,7 +3,7 @@
     <section class="intro">
         <h1 class="intro__title">Takken</h1>
         <div class="content__rev">
-            <img class="content__image" src="images/intros/sjorring-tent-op-hoogte.jpg" alt="">
+            <img class="content__image" src="images/intros/takken.jpg" alt="">
             <div class="intro__info">
                 <h2 id="index__title">Een tak? Was da?!</h2>
                 <div class="info__content">

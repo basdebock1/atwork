@@ -13,7 +13,7 @@ $(".nieuws__slider").slick({
         {
             breakpoint: 768,
             settings: {
-                centerMode: true,
+                centerMode: false,
                 slidesToShow: 2,
                 centerPadding: "16px",
             },

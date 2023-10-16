@@ -3,7 +3,7 @@
     <section class="intro">
         <h1 class="intro__title">Over ons</h1>
         <div class="content__rev">
-            <img class="content__image" src="images/intros/fluiter_mei.jpg" alt="">
+            <img class="content__image" src="images/intros/over-ons.jpg" alt="">
             <div class="info__content">
                 <div class="info__text">
                     <h2 id="index__title">Scouts & Gidsen Sint-Martinus</h2>
@@ -27,7 +27,7 @@
                     <p>
                         Twijfel niet en stuur ons een mailtje! De groepsleiding neemt dan snel contact op met jou.
                     </p>
-                    <a class="link-secondary" href="mailto:groepsleiding@scoutsnieuwkerken.be">E-mail groepsleiding</a>
+                    <a class="btn" href="mailto:groepsleiding@scoutsnieuwkerken.be">E-mail groepsleiding</a>
                 </div>
             </div>
         </div>

@@ -12,7 +12,8 @@ class ArticleController extends Controller
     {
         return view('nieuws.index', [
             'articles' => Article::orderByDesc('created_at')->get(),
-            'latestArticle' => Article::latest()->first()
+            'latestArticle' => Article::latest()->first(),
+            'latestFluiter' => Article::where('isFluiter', '1')->latest()->first(),
         ]);
     }
 
@@ -37,6 +38,7 @@ class ArticleController extends Controller
         $article->excerpt = request('excerpt');
         $article->text = request('text');
         $article->image_path = $newArticleImageName;
+        $article->isFluiter = request('fluiter');
 
         request('image')->move(public_path('images/articles'), $newArticleImageName);
 
@@ -62,10 +64,10 @@ class ArticleController extends Controller
     public function update($id)
     {
         $article = Article::findOrFail($id);
-
         $article->title = request('title');
         $article->excerpt = request('excerpt');
         $article->text = request('text');
+        $article->isFluiter = request('fluiter');
         if(request('image') != null) {
             File::delete(public_path('/images/articles/'.$article->image_path));
             $newArticleImageName = time() . '-' . request('image')->getClientOriginalName();

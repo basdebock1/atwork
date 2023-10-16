@@ -1,6 +1,6 @@
 <nav class="nav">
     <div class="nav__bar">
-        <a class="nav__brand" href="/">
+        <a class="nav__brand {{ request()->is('/') ? 'active' : '' }}" href="/">
             Scouts Sint-Martinus
         </a>
         <div class="nav__items">

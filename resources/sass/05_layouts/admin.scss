@@ -12,10 +12,13 @@
         text-align: center;
         padding: 1rem 0;
     }
+    textarea {
+        height: 12rem;
+    }
 }
 
 @media (min-width: $break-md) {
     .admin-form {
-        width: 50%;
+        width: 80%;
     }
 }

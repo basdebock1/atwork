@@ -1,4 +1,7 @@
 @extends('layouts.wrapper')
+
+@section('title') {{'Home'}} @endsection
+
 @section('content')
     <section class="introduction">
         <x-post :post="$post" />

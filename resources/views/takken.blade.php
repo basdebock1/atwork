@@ -1,4 +1,7 @@
 @extends('layouts.wrapper')
+
+@section('title') {{'Takken'}} @endsection
+
 @section('content')
     <section class="intro">
         <h1 class="intro__title">Takken</h1>

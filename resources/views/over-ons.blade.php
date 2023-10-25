@@ -1,4 +1,7 @@
 @extends('layouts.wrapper')
+
+@section('title') {{'Over Ons'}} @endsection
+
 @section('content')
     <section class="intro">
         <h1 class="intro__title">Over ons</h1>

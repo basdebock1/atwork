@@ -1,4 +1,7 @@
 @extends('layouts.wrapper')
+
+@section('title') {{$article->title}} {{'| Nieuws'}} @endsection
+
 @section('content')
     <section>
         <a class="link-back" href="/nieuws">Terug naar nieuws</a>
